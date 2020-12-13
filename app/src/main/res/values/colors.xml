@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorFundoSpalshScreen">#012458</color>
+
+
+    <color name="corBotao3">#3F51B5</color>
+    <color name="corBotao2">#303F9F</color>
+    <color name="corBotao1">#012458</color>
+
+
+
+    <color name="corBotao3Laranja">#ffb081</color>
+    <color name="corBotao2Laranja">#ff8c46</color>
+    <color name="corBotao1Laranja">#ff6000</color>
+
+
+    <color name="banco">#ffffff</color>
+    <color name="banco2">#e0e0e0</color>
+</resources>
