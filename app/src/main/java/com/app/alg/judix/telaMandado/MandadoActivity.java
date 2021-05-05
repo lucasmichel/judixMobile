@@ -1,5 +1,6 @@
 package com.app.alg.judix.telaMandado;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -45,6 +46,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -315,7 +317,8 @@ public class MandadoActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    @SuppressLint("ResourceAsColor")
+    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -421,8 +424,11 @@ public class MandadoActivity extends AppCompatActivity
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 //builder.setView(inflater.inflate(R.layout.layout_dialog, null, false));
 
+                LinearLayout layout = new LinearLayout(this);
+                layout.setOrientation(LinearLayout.VERTICAL);
+                //layout.setPaddingRelative(5,5,5,5);
 
-                String[] items = {"Whatsapp","E-mail"};
+                /*String[] items = {"Whatsapp"};
 
                 int checkedItem = -1;
                 builder.setSingleChoiceItems(items, checkedItem, new DialogInterface.OnClickListener() {
@@ -437,25 +443,50 @@ public class MandadoActivity extends AppCompatActivity
                                 break;
                         }
                     }
-                });
-
-
+                });*/
 
 
                 View view = (View) inflater.inflate(R.layout.layout_dialog, null);
                 builder.setCustomTitle(view);
 
                 TextView tituloDialog = (TextView) view.findViewById(R.id.tituloDialog);
+                tituloDialog.setText("Compartilhar pelo whatsapp");
 
-                tituloDialog.setText("Compartilhar Mandado");
+                final TextView textNameFone = new TextView(this);
+                textNameFone.setText("Telefone:");
+                layout.addView(textNameFone);
 
-                //builder.setTitle("Comartilhar com whatsapp");
-
-                // Set up the input
                 final EditText input = new EditText(this);
                 // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
                 input.setInputType(InputType.TYPE_CLASS_TEXT);
-                builder.setView(input);
+                layout.addView(input);
+
+
+
+
+                final TextView textNameRecebedor = new TextView(this);
+                textNameRecebedor.setText("Recebedor:");
+                layout.addView(textNameRecebedor);
+
+                final EditText inputNameRecebedor = new EditText(this);
+                // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+                inputNameRecebedor.setInputType(InputType.TYPE_CLASS_TEXT);
+                layout.addView(inputNameRecebedor);
+
+
+
+                final TextView textNameEmail = new TextView(this);
+                textNameEmail.setText("E-mail:");
+                layout.addView(textNameEmail);
+
+                final EditText inputNameEmail = new EditText(this);
+                // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+                inputNameEmail.setInputType(InputType.TYPE_CLASS_TEXT);
+                layout.addView(inputNameEmail);
+
+
+
+
 
                 input.addTextChangedListener(Mask.insert(Mask.CELULAR_MASK, input));
                 //validar telefone..
@@ -473,16 +504,17 @@ public class MandadoActivity extends AppCompatActivity
                     }
                     input.setInputType(InputType.TYPE_CLASS_PHONE);
                     input.setText(fone);
+                    inputNameRecebedor.setText(this.mandadoEscolhido.getMAN_Destinatario());
                 }catch (Exception e){
                     e.getMessage();
                 }
 
 
 
-
+                builder.setView(layout);
 
                 // Set up the buttons
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton("       Compartilhar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -557,7 +589,7 @@ public class MandadoActivity extends AppCompatActivity
 
 
 
-                                a.registraCompartilhamentoMandado(mandadoEscolhido.getMAN_ID(), input.getText().toString());
+                                a.registraCompartilhamentoMandado(mandadoEscolhido.getMAN_ID(), input.getText().toString(), inputNameRecebedor.getText().toString(), inputNameEmail.getText().toString() );
 
 
                             }else{
@@ -569,9 +601,6 @@ public class MandadoActivity extends AppCompatActivity
                             toast.show();
                         }
 
-
-
-
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -581,8 +610,24 @@ public class MandadoActivity extends AppCompatActivity
                     }
                 });
 
+
+
+
                 alerta = builder.create();
                 alerta.show();
+
+                alerta.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(R.color.corBotao1Laranja);
+                //alerta.getButton(AlertDialog.BUTTON_NEGATIVE).setBackgroundColor(R.color.colorAccent);
+
+
+
+                alerta.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(R.color.place_autocomplete_prediction_primary_text_highlight);
+                //alerta.getButton(AlertDialog.BUTTON_POSITIVE).setBackgroundColor(R.color.corBotao3Laranja);
+                //alerta.getButton(AlertDialog.BUTTON_POSITIVE).setPadding(5, 5, 5,5);
+
+
+
+
 
 
 
@@ -1478,7 +1523,9 @@ public class MandadoActivity extends AppCompatActivity
     }
 
 
-    public void registraCompartilhamentoMandado(String idMandado, String telefone){
+
+
+    public void registraCompartilhamentoMandado(String idMandado, String telefone, String recebedor, String email){
 
         final JSONObject jsonEnviar = new JSONObject();
         final JSONObject objEnviar = new JSONObject();
@@ -1497,6 +1544,8 @@ public class MandadoActivity extends AppCompatActivity
             objEnviar.put("MAN_ID", idMandado.toString());
             objEnviar.put("HMC_TipoStatus", "COMPARTILHADO");
             objEnviar.put("MAN_FoneCompartilhamentoZap", telefone.toString());
+            objEnviar.put("HMC_Recebedor", recebedor.toString());
+            objEnviar.put("HMC_Email", email.toString());
 
             JSONArray arrayDados = new JSONArray();
             arrayDados.put(0, objEnviar);
