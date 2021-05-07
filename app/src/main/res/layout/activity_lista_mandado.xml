@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="ID:"
+                android:text="ID Externo:"
                 android:id="@+id/textView9" />
 
             <EditText
