@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.barteksc:android-pdf-viewer:2.8.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2be706e989dafaad53c68213cd83f4ef/android-pdf-viewer-2.8.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2be706e989dafaad53c68213cd83f4ef/android-pdf-viewer-2.8.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/596e90681a11db6285381b515c5b9257/android-pdf-viewer-2.8.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/596e90681a11db6285381b515c5b9257/android-pdf-viewer-2.8.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/596e90681a11db6285381b515c5b9257/android-pdf-viewer-2.8.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.barteksc/android-pdf-viewer/2.8.2/23303ed2c4972d3268a9bfd5d91a30752028401/android-pdf-viewer-2.8.2-javadoc.jar!/" />

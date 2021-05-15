@@ -528,6 +528,12 @@ public class MandadoActivity extends AppCompatActivity
                             //String url = "https://api.whatsapp.com/send/?phone=5581989838324&text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento.&app_absent=0";
 
 
+
+
+
+                            // hash = md5("judix".MAN_ID."process"); CRIAR UM HASH AQUI COM ESTE PADRAO
+                            //fazer com que este hash seja gravado no momento que cadastra o mandado do judix
+
                             String urlEnviar = "https://api.whatsapp.com/send?phone="+numeroPronto+"&text=https://judix.com.br/ci/site/mandado/"+mandadoEscolhido.getHash()+"&app_absent=0";
                             //String urlEnviar = "https://api.whatsapp.com/send?phone="+numeroPronto+"&text=BALAIO_DE_GATO&app_absent=0";
 

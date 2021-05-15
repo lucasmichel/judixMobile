@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="judixMobile/app" />
-      <module fileurl="file://$PROJECT_DIR$/judixMobile.iml" filepath="$PROJECT_DIR$/judixMobile.iml" group="judixMobile" />
+      <module fileurl="file://$PROJECT_DIR$/judixMobile.iml" filepath="$PROJECT_DIR$/judixMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/judixMobile.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/judixMobile.app.iml" />
     </modules>
   </component>
 </project>
