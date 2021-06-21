@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.barteksc:pdfium-android:1.7.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/733f8b9299aadc417ff91e3aab00f280/pdfium-android-1.7.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd4dcd64e932e32e7224a6674e324922/pdfium-android-1.7.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd4dcd64e932e32e7224a6674e324922/pdfium-android-1.7.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd4dcd64e932e32e7224a6674e324922/pdfium-android-1.7.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30e9cb8204cc4ed7658899414fc523e6/jetified-pdfium-android-1.7.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30e9cb8204cc4ed7658899414fc523e6/jetified-pdfium-android-1.7.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30e9cb8204cc4ed7658899414fc523e6/jetified-pdfium-android-1.7.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.barteksc/pdfium-android/1.7.1/89b2c068c8fd5c088f1edbcab0fade1fe377865b/pdfium-android-1.7.1-javadoc.jar!/" />

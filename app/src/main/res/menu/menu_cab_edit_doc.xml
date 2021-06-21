@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_action_delete"
         android:id="@+id/menu_item_delete"
         android:orderInCategory="1"
-        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:title="Delete"
         android:iconifiedByDefault="true"/>
 
@@ -19,7 +19,7 @@
         android:icon="@drawable/ic_menu_send"
         android:id="@+id/menu_item_upload"
         android:orderInCategory="1"
-        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:title="Upload"
         android:iconifiedByDefault="true"/>
 

@@ -6,36 +6,27 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.RequestFuture;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.app.alg.judix.R;
 import com.app.alg.judix.model.Certidao;
 import com.app.alg.judix.model.Mandado;
-import com.app.alg.judix.telaMandado.FotosMandado;
-import com.app.alg.judix.telaMandado.MandadoActivity;
 import com.app.alg.judix.util.Constantes;
 import com.app.alg.judix.util.Funcoes;
-import com.app.alg.judix.util.MyVolleyAsyncTask;
-import com.app.alg.judix.util.TesteVoley;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -44,12 +35,7 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 public class CertidaoDoMandado extends AppCompatActivity implements View.OnClickListener {
 

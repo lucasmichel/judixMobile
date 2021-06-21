@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-vision:8.4.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12f012cef3fed7465ba3e77c162c635a/play-services-vision-8.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd53b8e994e23ad141553ba43a4a8470/play-services-vision-8.4.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd53b8e994e23ad141553ba43a4a8470/play-services-vision-8.4.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd53b8e994e23ad141553ba43a4a8470/play-services-vision-8.4.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0db6c84fbf712730f5154405c211d9b8/jetified-play-services-vision-8.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0db6c84fbf712730f5154405c211d9b8/jetified-play-services-vision-8.4.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0db6c84fbf712730f5154405c211d9b8/jetified-play-services-vision-8.4.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

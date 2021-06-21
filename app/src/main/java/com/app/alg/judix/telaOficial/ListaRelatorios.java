@@ -2,14 +2,13 @@ package com.app.alg.judix.telaOficial;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.app.alg.judix.R;
-import com.app.alg.judix.util.Funcoes;
 
 public class ListaRelatorios extends AppCompatActivity implements View.OnClickListener {
 

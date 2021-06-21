@@ -27,7 +27,7 @@ import android.print.PrintDocumentAdapter;
 import android.print.PrintDocumentInfo;
 import android.print.PrintManager;
 import android.print.pdf.PrintedPdfDocument;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -53,7 +53,6 @@ import com.android.volley.toolbox.Volley;
 import com.app.alg.judix.R;
 import com.app.alg.judix.model.Endereco;
 import com.app.alg.judix.model.Mandado;
-import com.app.alg.judix.model.Notificacao;
 import com.app.alg.judix.telaNotificacaoMandado.ListaNotificacaoMandado;
 import com.app.alg.judix.util.FilesHandler;
 import com.app.alg.judix.util.Funcoes;
@@ -73,7 +72,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -81,7 +79,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.Locale;
 
 public class ListaMandadoActivity extends AppCompatActivity {
 

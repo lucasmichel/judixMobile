@@ -1,13 +1,11 @@
 package com.app.alg.judix.telaArquivosAnexos;
 
-import android.content.Intent;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.app.alg.judix.R;
-import com.app.alg.judix.telaMandado.MandadoActivity;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnErrorListener;
 import com.github.barteksc.pdfviewer.listener.OnPageChangeListener;

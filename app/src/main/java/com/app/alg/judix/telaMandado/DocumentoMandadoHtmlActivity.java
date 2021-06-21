@@ -1,7 +1,7 @@
 package com.app.alg.judix.telaMandado;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.alg.judix.R;
 

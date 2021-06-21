@@ -5,12 +5,8 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.RectF;
-import android.net.Uri;
-import android.os.Environment;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.View;
@@ -19,19 +15,14 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.app.alg.judix.R;
-import com.app.alg.judix.model.Certidao;
 import com.app.alg.judix.model.DispositivoBluetooth;
 import com.app.alg.judix.model.Mandado;
-import com.app.alg.judix.telaCertidoes.CertidaoDoMandado;
-import com.app.alg.judix.telaCertidoes.ListaCertidoes;
 import com.google.gson.Gson;
 
 //import org.vudroid.core.DecodeServiceBase;
 //import org.vudroid.pdfdroid.codec.PdfContext;
 //import org.vudroid.pdfdroid.codec.PdfPage;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
