@@ -3,6 +3,6 @@
 
 
     <corners android:radius="2dp" />
-    <gradient android:startColor="@color/common_action_bar_splitter" android:centerColor="@color/common_google_signin_btn_text_dark_pressed" android:endColor="@color/common_action_bar_splitter" android:angle="90" />
+    <gradient android:startColor="@color/cardview_shadow_end_color" android:centerColor="@color/common_google_signin_btn_text_dark_pressed" android:endColor="@color/cardview_shadow_end_color" android:angle="90" />
 
 </shape>
