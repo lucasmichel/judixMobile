@@ -40,21 +40,21 @@
                 android:paddingTop="20dp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/editTextCpf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_above="@+id/textView"
-                android:layout_alignLeft="@+id/textView"
                 android:layout_alignStart="@+id/textView"
-                android:layout_alignRight="@+id/editTextSenha"
+                android:layout_alignLeft="@+id/textView"
                 android:layout_alignEnd="@+id/editTextSenha"
+                android:layout_alignRight="@+id/editTextSenha"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_list_2"
                 android:inputType="number"
                 android:text="975.765.383-76"
-                tools:ignore="HardcodedText"
-                android:layout_weight="1"
 
-                android:background="@drawable/fundo_edit_text_branco"
-                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -69,35 +69,35 @@
                 android:paddingTop="20dp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
                 android:id="@+id/editTextSenha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_above="@+id/buttonLogin"
                 android:layout_centerHorizontal="true"
+                android:background="@drawable/round_shape_list_2"
+                android:ems="10"
+                android:inputType="textPassword"
                 android:text="123456"
-                android:background="@drawable/fundo_edit_text_branco"
                 android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
 
             <Button
+                android:id="@+id/buttonLogin"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:id="@+id/buttonLogin"
-                android:layout_marginBottom="69dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignLeft="@+id/editTextSenha"
                 android:layout_alignStart="@+id/editTextSenha"
-                android:drawableTop="@mipmap/ic_action_key"
-                android:background="@drawable/selector_button"
-                android:textAllCaps="false"
-                android:padding="@dimen/place_autocomplete_prediction_secondary_text"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_alignRight="@+id/editTextSenha"
+                android:layout_alignLeft="@+id/editTextSenha"
                 android:layout_alignEnd="@+id/editTextSenha"
+                android:layout_alignRight="@+id/editTextSenha"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="69dp"
+                android:background="@drawable/selector_button"
+                android:drawableTop="@mipmap/ic_action_key"
                 android:focusableInTouchMode="true"
-                android:layout_marginTop="20dp" />
+                android:padding="@dimen/place_autocomplete_prediction_secondary_text"
+                android:text="Login"
+                android:textAllCaps="false" />
 
         </LinearLayout>
     </ScrollView>

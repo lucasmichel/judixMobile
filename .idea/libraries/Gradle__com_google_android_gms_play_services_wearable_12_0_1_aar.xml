@@ -4,6 +4,10 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e24922d85f253e65878467903014757/jetified-play-services-wearable-12.0.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e24922d85f253e65878467903014757/jetified-play-services-wearable-12.0.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e24922d85f253e65878467903014757/jetified-play-services-wearable-12.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a1de275e32841de4c5a13042e1dc37d/jetified-play-services-wearable-12.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/116d19028b16383cb037adbe33783a80/transformed/jetified-play-services-wearable-12.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/116d19028b16383cb037adbe33783a80/transformed/jetified-play-services-wearable-12.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/116d19028b16383cb037adbe33783a80/transformed/jetified-play-services-wearable-12.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
